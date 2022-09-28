@@ -32,7 +32,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	media = document.getElementById("idAge");
 	media = document.getElementById("idfirstName");
 	media = document.getElementById("idsecondName");
-    tg.sendData(media); 
+    tg.sendData("Pro_media"); 
 });
 
 
