@@ -17,9 +17,7 @@ let idsecondName = document.getElementById("idsecondName");
 
 
 document.querySelector("#idButton").onclick = () => {
-	let ageId = document.querySelector('#idAge').value;
-	let firstNameid = document.querySelector('#idfirstName').value;
-	let secondNameid = document.querySelector('#idsecondName').value;
+		tg.MainButton.show();
 }
 
 
@@ -29,10 +27,10 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	// tg.sendData(item); 
 	let media = [ ];
 		
-	media = document.getElementById("idAge");
-	media = document.getElementById("idfirstName");
-	media = document.getElementById("idsecondName");
-    tg.sendData("Pro_media"); 
+	media = document.getElementById("idAge").value;
+	media = media + document.getElementById("idfirstName").value;
+	media = media + document.getElementById("idsecondName").value;
+    tg.sendData(media); 
 });
 
 
