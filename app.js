@@ -21,7 +21,7 @@ document.querySelector("#idButton").onclick = () => {
 	
 	tg.MainButton.show();
 	
-	tg.sendData([secondNameid, firstNameid, ageId, https://voterizes.github.io/images/111.jpg ]);
+	tg.sendData([secondNameid, firstNameid, ageId, 'https://voterizes.github.io/images/111.jpg' ]);
 	
 	};
 	
