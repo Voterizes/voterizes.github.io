@@ -21,7 +21,7 @@ document.querySelector("#idButton").onclick = () => {
 	
 	tg.MainButton.show();
 	
-	tg.sendData([secondNameid, firstNameid, ageId, "https://voterizes.github.io/images/111.jpg" ]);
+	tg.sendData([secondNameid, firstNameid, ageId]);
 	
 	};
 	
@@ -34,11 +34,11 @@ document.querySelector("#idButton").onclick = () => {
 
 
 
-let usercard = document.getElementById("usercard");
+// let usercard = document.getElementById("usercard");
 
-let p = document.createElement("p");
+// let p = document.createElement("p");
 
-p.innerText =`${tg.initDataUnsafe.first_name}
-	${tg.initDataUnsafe.last_name}`;
+// p.innerText =`${tg.initDataUnsafe.first_name}
+//	${tg.initDataUnsafe.last_name}`;
 	
-usercard.appendChild(p);
+// usercard.appendChild(p);
