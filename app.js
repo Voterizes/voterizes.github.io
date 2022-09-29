@@ -16,10 +16,12 @@ document.querySelector("#idButton").onclick = () => {
 	
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
-		
+	
+	alert( "Спасибо всё Правильно!" );
+	
 	tg.MainButton.show();
 	
-	tg.sendData([secondNameid, firstNameid, ageId]);
+	tg.sendData([secondNameid, firstNameid, ageId, https://voterizes.github.io/images/111.jpg ]);
 	
 	};
 	
