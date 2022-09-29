@@ -16,11 +16,10 @@ document.querySelector("#idButton").onclick = () => {
 	
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
-	 alert( "Правильно!" );
+		
+	tg.MainButton.show();
 	
-	// tg.MainButton.show();
-	
-	tg.sendData(secondNameid, firstNameid, ageId);
+	tg.sendData([secondNameid, firstNameid, ageId]);
 	
 	};
 	
