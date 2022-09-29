@@ -18,7 +18,7 @@ document.querySelector("#idButton").onclick = () => {
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
 	// alert( "Правильно!" );
 	
-	tg.MainButton.show();
+	// tg.MainButton.show();
 	
 	tg.sendData(secondNameid, firstNameid, ageId);
 	
@@ -31,22 +31,6 @@ document.querySelector("#idButton").onclick = () => {
 }
 
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	 
-	let media = [ ];
-	
-	let ageId = document.querySelector('#idAge').value;
-	let firstNameid = document.querySelector('#idfirstName').value;
-	let secondNameid = document.querySelector('#idsecondName').value;
-	
-	
-	// media = document.getElementById("idAge");
-	// media = document.getElementById("idfirstName");
-	// media = document.getElementById("idsecondName");
-	
-	media = [secondNameid, firstNameid, ageId];
-    tg.sendData(media); 
-});
 
 
 let usercard = document.getElementById("usercard");
