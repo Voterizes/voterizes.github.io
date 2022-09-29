@@ -16,7 +16,7 @@ document.querySelector("#idButton").onclick = () => {
 	
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
-	// alert( "Правильно!" );
+	 alert( "Правильно!" );
 	
 	// tg.MainButton.show();
 	
