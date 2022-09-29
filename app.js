@@ -17,9 +17,6 @@ document.querySelector("#idButton").onclick = () => {
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
 	
-	alert( "Спасибо всё Правильно!" );
-	
-	tg.MainButton.show();
 	
 	tg.sendData([secondNameid, firstNameid, ageId]);
 	
