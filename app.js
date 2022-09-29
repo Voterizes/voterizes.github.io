@@ -10,6 +10,18 @@ let item = '0';
 
 
 document.querySelector("#idButton").onclick = () => {
+	let ageId = document.querySelector('#idAge').value;
+	let firstNameid = document.querySelector('#idfirstName').value;
+	let secondNameid = document.querySelector('#idsecondName').value;
+	
+	
+	// media = document.getElementById("idAge");
+	// media = document.getElementById("idfirstName");
+	// media = document.getElementById("idsecondName");
+	
+	media = [secondNameid, firstNameid, ageId];
+    tg.sendData(media); 
+	
 	tg.MainButton.show();
 	
 }
