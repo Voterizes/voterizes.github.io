@@ -18,7 +18,7 @@ document.querySelector("#idButton").onclick = () => {
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
 	
 	
-	tg.sendData(secondNameid, firstNameid, ageId);
+	tg.sendData([secondNameid, firstNameid, ageId]);
 	
 	};
 	
