@@ -18,6 +18,10 @@ document.getElementById('idAge').onclick = function() {
       document.getElementById('idAge').hidden = true;
     }
 	
+setTimeout(function() {
+  let b = 4 + 4;
+}, (3 * 1000));
+	
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
 	
