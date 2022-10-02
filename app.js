@@ -14,6 +14,10 @@ document.querySelector("#idButton").onclick = () => {
 	let firstNameid = document.querySelector('#idfirstName').value;
 	let secondNameid = document.querySelector('#idsecondName').value;
 	
+document.getElementById('idAge').onclick = function() {
+      document.getElementById('idAge').hidden = true;
+    }
+	
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
 	
