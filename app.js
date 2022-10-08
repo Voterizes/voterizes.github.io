@@ -7,21 +7,47 @@ tg.MainButton.color = "#FF4500";
 
 let item = '0';
 
+function addHidden(event){
+    event.classList.add('hidden');
+}
 
+
+function addHidden_2(one, two, three){
+    document.getElementById(one).hidden = true;
+	document.getElementById(two).hidden = true;
+	document.getElementById(three).hidden = true;
+}
+
+function removeHidden(event){
+    event.classList.remove('hidden');
+}
+
+function removeHidden_2(one){
+    document.getElementById(one).hidden = false;
+}
 
 document.querySelector("#idButton").onclick = () => {
 	let ageId = document.querySelector('#idAge').value;
 	let firstNameid = document.querySelector('#idfirstName').value;
 	let secondNameid = document.querySelector('#idsecondName').value;
 	
-document.getElementById('idAge').onclick = function() {
-      document.getElementById('idAge').hidden = true;
-    }
+      event.preventDefault();
+	  //addHidden(idAge);
+	  
+	  //addHidden_2('idfirstName');
+	 
+	 setTimeout(function() {
+		addHidden_2('idAge', 'idfirstName', 'idsecondName');
+	}, (1 * 1600));
+
+	 setTimeout(function() {
+		//removeHidden_2('idAge', 'idfirstName', 'idsecondName');
+	}, (1 * 1200));
 	
-setTimeout(function() {
-  let b = 4 + 4;
-}, (3 * 1000));
+
+
 	
+
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
 	
@@ -38,7 +64,6 @@ setTimeout(function() {
 
 
 
-
 // let usercard = document.getElementById("usercard");
 
 // let p = document.createElement("p");
@@ -47,3 +72,5 @@ setTimeout(function() {
 //	${tg.initDataUnsafe.last_name}`;
 	
 // usercard.appendChild(p);
+
+
