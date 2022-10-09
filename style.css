@@ -12,7 +12,9 @@ body {
 	margin: auto;
 }
 
-
+.p_color {
+	color: blue;
+}
 
 
 
@@ -367,7 +369,7 @@ option:checked {
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-width: 360px;
+width: 100%;
 margin-left: auto;
 margin-right: auto;
 
@@ -483,7 +485,7 @@ margin-right: auto;
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
-  width: 95%;
+  width: 93%;
   margin: auto;
  }
 
@@ -581,7 +583,7 @@ margin-right: auto;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-width: 360px;
+width: 100%;
 margin-left: auto;
 margin-right: auto;
 
