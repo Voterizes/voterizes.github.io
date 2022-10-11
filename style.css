@@ -6,6 +6,11 @@ body {
 	background: var(--tg-theme-bg-color);
 }
 
+
+h3 {
+	color: blue;
+}
+
 .container {
 	max-width: 390px;
 	text-align: center;
@@ -13,7 +18,7 @@ body {
 }
 
 .p_color {
-	color: blue;
+	color: black;
 }
 
 
@@ -321,7 +326,7 @@ option:checked {
 }
 .checkbox.style_photo:hover .checkbox__body {
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-  background-color: #f715e6a6;
+  background-color: #f55db133;
 }
 .checkbox.style_photo .checkbox__checkmark {
   position: absolute;
@@ -356,7 +361,7 @@ option:checked {
   font-weight: bold;
   height: 180px;
   color: #333;
-  background: linear-gradient(90deg, #49d70f 0%, #eff30df2 50%, #f3f2ec 50%, #f7e61540 100%);
+  background: linear-gradient(90deg, #49d70f 0%, #eff30df2 50%, #f9f9f6 50%, #f9eb4440 100%);
   background-size: 200% 100%;
   background-position: 100% 0;
   margin: 8%;
@@ -470,7 +475,7 @@ margin-right: auto;
   width: 100%;
   height: 40px;
   color: #333;
-  background: linear-gradient(90deg, #49d70f 0%, #eff30df2 50%, #f3f2ec 50%, #f7e61540 100%);
+  background: linear-gradient(90deg, #49d70f 0%, #eff30df2 50%, #f3f2ec 50%, #f1e44b40 100%);
   background-size: 200% 100%;
   background-position: 100% 0;
   margin: 10px 0px;
@@ -513,14 +518,26 @@ margin-right: auto;
   cursor: pointer;
   height: 0;
   width: 0;
+
 }
 .checkbox.style_square input:checked ~ .checkbox__checkmark {
-  background-color: #15edf7;
+  /*background-color: #15edf7;*/
 }
 .checkbox.style_square input:checked ~ .checkbox__checkmark:after {
   opacity: 1;
-  top: -5px;
-  
+  background-image: url(silv_3.jpg);
+  border-radius: 54px;
+  width: 35px;
+  height: 35px;
+  top: -4px;
+  left: -4px;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  animation-name: rotation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
    
 }
 .checkbox.style_square input:checked ~ .checkbox__body {
@@ -529,9 +546,21 @@ margin-right: auto;
 }
 .checkbox.style_square:hover input ~ .checkbox__checkmark {
   background-color: #fdff89f2;
+ }
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
+
 .checkbox.style_square:hover input:checked ~ .checkbox__checkmark {
-  background-color: #15edf7;
+  
+  /*background-color: #15edf7;*/
+
 }
 .checkbox.style_square:hover .checkbox__body {
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
@@ -539,26 +568,41 @@ margin-right: auto;
 }
 .checkbox.style_square .checkbox__checkmark {
   position: absolute;
-  top: 28%;
+  top: 20%;
   transform: translateY(-50%);
   left: 43%;
-  height: 22px;
-  width: 12%;
+  /* height: 22px;
+  width: 12%; */
   background-color: white;
   transition: background-color 0.25s ease;
   border-radius: 4px;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,0.1), inset -2px -2px 4px rgba(255,255,255,0.4);
 }
+
 .checkbox.style_square .checkbox__checkmark:after {
-    content: "";
-    position: absolute;
+  content: "";
+  border-radius: 54px;
+  position: absolute;
+  left: 2%;
+  background-image: url(silv.png);
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+    animation-name: rotation;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+	
+	/*
     left: 9px;
     top: -14px;
     width: 13px;
     height: 26px;
     border: solid #678bdd;
     border-width: 0 4px 4px 0;
-    transform: rotate(45deg);
+    transform: rotate(45deg); */
     /* opacity: 0; */
     transition: opacity 0.25s ease, top 0.25s ease;
 }
@@ -570,8 +614,8 @@ margin-right: auto;
   font-weight: bold;
   height: 130px;
   color: #333;
-  background: linear-gradient(90deg, #49d70f 0%, #eff30df2 50%, #f3f2ec 50%, #f7e61540 100%);
-  background-size: 200% 100%;
+  background: linear-gradient(45deg, #49d70f 0%, #eff30df2 50%, #f3f2ec 50%, #f7e61540 100%);
+  background-size: 300% 100%;
   background-position: 100% 0;
   margin: 8%;
   border-radius: 5px;
@@ -640,6 +684,11 @@ margin-right: auto;
   animation: blick 5s infinite;
 }
 
+.btn_blick:after {
+	
+}
+
+
 @keyframes blick {
   0% {
     transform: translate(-100%, -25%) rotate(10deg);
@@ -651,6 +700,199 @@ margin-right: auto;
     transform: translate(100%, -25%) rotate(10deg);
   }
 }
+
+/* ВРАЩАЮЩИЙСЯ ЗЕМНОЙ ШАР*/
+
+
+.globe-container,
+.globe {
+    width: 200px;
+    height: 200px;  
+}
+.globe-container {
+    position: relative;  
+    display: inline-block;
+    margin: 30px;
+    transform: scale(1.1);
+}
+.globe {
+    position: relative;  
+    display: block;
+    margin: 0;
+    padding: 0;
+    top: 0; 
+    left: 0;
+}
+.globe-worldmap,
+.globe-worldmap-front,
+.globe-worldmap-back,
+.globe-sphere,
+.globe-outer-shadow,
+.globe-inner-shadow {
+    position: absolute; 
+    display: block; 
+    margin: 0; 
+}
+.globe-sphere,
+.globe-outer-shadow,
+.globe-inner-shadow {
+    left: 0; 
+    top: 0; 
+    width: 200px; 
+    height: 200px;
+    background-position: 0 0; 
+    background-repeat: no-repeat;
+}
+.globe-worldmap {
+    left: 0; 
+    top: 0; 
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden;
+    border-radius: 50%;
+}
+.globe-worldmap-front,
+.globe-worldmap-back {
+    left: 0; 
+    top: 0; 
+    width: 1000px; 
+    height: 200px; 
+    overflow: visible;
+    background-image: url(worldmap.svg);
+    background-repeat: no-repeat;
+}
+.globe-outer-shadow { 
+    left: 0; 
+    top: 186px; 
+    width: 200px; 
+    height: 30px;
+    background-image: url(outer_shadow.svg);
+}
+.globe-inner-shadow { 
+    background-image: url(inner_shadow.svg);
+}
+ 
+.globe-worldmap-front { 
+    background-position: 0px 0px;
+    animation: textureSpinreverse 8s linear infinite;
+}
+.globe-worldmap-back { 
+    background-position: 0px -220px;
+    animation: textureSpin 8s linear infinite;
+}
+ 
+@keyframes textureSpin {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-47.5%);
+    }
+}
+@keyframes textureSpinreverse {
+    from {
+        transform: translateX(-47.5%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+/* РАДИО КНОПКИ*/
+
+.radioboxesall_photo{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.radiobox__row_photo {
+	width: 50%;
+}
+
+.radiobox_photo {
+	
+}
+
+.switch-field {
+	display: block;
+	position: relative;
+	/* overflow: hidden; */
+}
+
+.switch-field input {
+	position: absolute !important;
+	opacity: 0;
+	/*
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+	*/
+}
+
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 16px;
+	line-height: 10;
+	padding: 28%;
+	height: 50px;
+	margin: 7%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+	display: block;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #a5dc86;
+	box-shadow: none;
+
+	font-weight: bold;
+	color: black;
+    background: linear-gradient(225deg, #eff30df2 0%, #ff9800 50%, #f3f2ec 50%, #f7e61540 100%);
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    margin: 8%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+    transition: box-shadow 0.25s ease, background 1s ease, color 0.25s ease;
+	
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+
+.radio_text {
+	position: absolute;
+	top: 0%;
+    left: 33%;
+}
+
+
+
+
+
+
+
 
 
 
