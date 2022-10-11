@@ -191,6 +191,7 @@ input.button:focus {
   border-radius:3px;  
   position:relative;
   box-shadow:0 2px 2px #888;
+  margin-bottom: 50px;
   }
 
 /* Em element is also styled, it contains the month’s name. */
