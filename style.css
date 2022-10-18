@@ -7,7 +7,7 @@ body {
 }
 
 
-h3 {
+h4 {
 	color: blue;
 }
 
@@ -15,6 +15,9 @@ h3 {
 	max-width: 390px;
 	text-align: center;
 	margin: auto;
+	
+	display: grid;
+    height: 100vh;
 }
 
 .p_color {
@@ -75,9 +78,11 @@ h3 {
 
 @-webkit-keyframes pulsate {
   50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+  
 }
 @keyframes pulsate {
   50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+
 }
 
 
@@ -122,9 +127,16 @@ input.button:focus {
 }
 
 .form_width {
-	width: 350px;
+	width: 90%;
 	height: 25px;
     border-style: dotted;
+    border-color: blue;
+}
+
+.texArea{
+	width: 90%;
+	height: 150px;
+	border-style: dotted;
     border-color: blue;
 }
 
@@ -169,6 +181,11 @@ input.button:focus {
     
 }
 
+.hidden2 {
+	display: none;
+    
+}
+
 
 
 
@@ -182,9 +199,9 @@ input.button:focus {
 .calendar{
   padding-top:5px;
   margin: 0 12%;
-  background:#ededef;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ededef), to(#ccc)); 
-  background: -moz-linear-gradient(top,  #ededef,  #ccc); 
+  background:#cbfdf838;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cbfdf838), to(#cbfdf838)); 
+  background: -moz-linear-gradient(top,  #cbfdf838,  #cbfdf838); 
   text-align:center;
   color:#000;
   text-shadow:#fff 0 1px 0; 
@@ -201,7 +218,7 @@ input.button:focus {
   color:#fff;
   text-shadow:#00365a 0 -1px 0; 
   background:#04599a;
-  background:-webkit-gradient(linear, left top, left bottom, from(#04599a), to(#00365a)); 
+  background: -webkit-gradient(linear, left top, left bottom, from(#8a049a), to(#580262)); 
   background:-moz-linear-gradient(top,  #04599a,  #00365a); 
   border-bottom-right-radius:3px;
   border-bottom-left-radius:3px;  
@@ -273,14 +290,14 @@ border-style: dotted;
     font-size: 25px;
     border-style: dotted;
     border-color: blue;
-    background: #ff00eb;
+    background: #0014ff;
     color: white;
 	animation: pulsate 1.2s linear infinite;
 }
 
 option:checked {
 	
-    background: yellow;
+    background: #00ffff;
     color: white;
 	animation: pulsate 1.2s linear infinite;
 }
@@ -393,7 +410,7 @@ margin-right: auto;
 
 .img_ri {
 	padding-top: 8%;
-	width: 131px;
+	width: 85%;
     height: 120px;
     position: relative;
 }
@@ -663,6 +680,7 @@ margin-right: auto;
   font-weight: 700;
   font-family: Arial,Helvetica,FreeSans,"Liberation Sans","Nimbus Sans L",sans-serif;
   background: linear-gradient(to right, #0123c8, #55e7fc);
+  border-color: white;
   padding: 10px 0;
   border-radius: 0.2rem;
   margin: 20px 0px;
@@ -840,11 +858,11 @@ margin-right: auto;
 }
 
 .switch-field label {
-	background-color: #e4e4e4;
+	background-color: #d5eced42;
 	color: rgba(0, 0, 0, 0.6);
 	font-size: 16px;
 	line-height: 10;
-	padding: 28%;
+	padding: 22%;
 	height: 50px;
 	margin: 7%;
 	border: 1px solid rgba(0, 0, 0, 0.2);
@@ -863,7 +881,7 @@ margin-right: auto;
 
 	font-weight: bold;
 	color: black;
-    background: linear-gradient(225deg, #eff30df2 0%, #ff9800 50%, #f3f2ec 50%, #f7e61540 100%);
+    background: linear-gradient(225deg, #eff30df2 0%, #00fffff5 50%, #f3f2ec 50%, #f7e61540 100%);
     background-size: 300% 100%;
     background-position: 100% 0;
     margin: 8%;
@@ -881,21 +899,71 @@ margin-right: auto;
 	border-radius: 0 4px 4px 0;
 }
 
+.radio_img {
+	top: 10%;
+    left: 28%;
+    width: 50%;
+    position: absolute;
+}
+
 
 .radio_text {
-	position: absolute;
-	top: 0%;
-    left: 33%;
+    position: absolute;
+    top: 40%;
+    left: -48%;
+    /*font-weight: bold;*/
+    height: 20px;
+    transform: rotate(270deg);
+    font-size: 19px;
 }
 
 
 
+/* ТЕКСТ АНИМАЦИЯ */
+
+/*
+
+.richard2 {
+  color: white;
+  background: #f51792;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  margin: 20px;
+  
+}
 
 
+*/
 
+.richard2 {
+-webkit-animation: pulsate 1.2s linear infinite;
+  //animation: pulsate 1.2s linear ;
+   
+}
 
-
-
+.wrapper {
+    text-align: center;
+    position: relative;
+    color: white;
+    background-color: #ed33a3;
+    margin: 20px;
+	animation: fade 3s forwards;
+  }
+  @keyframes fade{
+    0%{
+      transform: translateY(-300px);
+    }
+    20% {
+      transform: translateY(0px);
+    }
+    80% {
+      transform: translateY(0px);
+    }
+    100%{
+      transform: translateY(-600px);
+    }
+  }
 
 
 
