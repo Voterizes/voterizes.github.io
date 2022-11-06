@@ -6,7 +6,7 @@ tg.MainButton.textColor = "#FFFF00";
 tg.MainButton.color = "#FF4500";
 
 let item = '0';
-/*
+
 function addHidden(event){
     event.classList.add('hidden');
 }
@@ -25,9 +25,9 @@ function removeHidden(event){
 function removeHidden_2(one){
     document.getElementById(one).hidden = false;
 }
-*/
 
-/* На Джаваскрипте
+
+// На Джаваскрипте
 document.querySelector("#idButton").onclick = () => {
 	let ageId = document.querySelector('#idAge').value;
 	let firstNameid = document.querySelector('#idfirstName').value;
@@ -41,8 +41,8 @@ document.querySelector("#idButton").onclick = () => {
 	};
 }
 
-*/
 
+/*
 // На jquery
 
 // $("#idButton").onclick = () => {
@@ -50,7 +50,7 @@ document.querySelector("#idButton").onclick = () => {
 	let firstNameid = $('#idfirstName').value;
 	let secondNameid = $('#idsecondName').value;
 
-/*
+
       event.preventDefault();
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
@@ -59,7 +59,7 @@ document.querySelector("#idButton").onclick = () => {
 	};
 }
 
-*/*
+*/
 
 
 // let usercard = document.getElementById("usercard");
