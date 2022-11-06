@@ -12,7 +12,7 @@ $(document).ready(function() {
 	
  });
 */	
-/**
+
 function addHidden(event){
     event.classList.add('hidden');
 }
@@ -48,7 +48,7 @@ document.querySelector("#idButton").onclick = () => {
 }
 
 
-*/
+
 
 /*
 // На jquery
