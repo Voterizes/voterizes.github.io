@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
 let tg = window.Telegram.WebApp;
 
 tg.expand();
@@ -8,9 +8,9 @@ tg.MainButton.color = "#FF4500";
 
 let item = '0';
 	
-});
+// });
 	
-/*
+
 function addHidden(event){
     event.classList.add('hidden');
 }
@@ -45,7 +45,7 @@ document.querySelector("#idButton").onclick = () => {
 	};
 }
 
-*/
+
 
 
 /*
