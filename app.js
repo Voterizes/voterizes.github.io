@@ -6,7 +6,7 @@ tg.MainButton.textColor = "#FFFF00";
 tg.MainButton.color = "#FF4500";
 
 let item = '0';
-
+/*
 function addHidden(event){
     event.classList.add('hidden');
 }
@@ -25,32 +25,39 @@ function removeHidden(event){
 function removeHidden_2(one){
     document.getElementById(one).hidden = false;
 }
+*/
 
+/* На Джаваскрипте
 document.querySelector("#idButton").onclick = () => {
 	let ageId = document.querySelector('#idAge').value;
 	let firstNameid = document.querySelector('#idfirstName').value;
 	let secondNameid = document.querySelector('#idsecondName').value;
 	
       event.preventDefault();
-	  //addHidden(idAge);
-	  
-	  //addHidden_2('idfirstName');
-	 
-	
-
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
-	
-	
 	tg.sendData([secondNameid,firstNameid,ageId].join('¿'));
 	
 	};
-	
-	
-	
-	
-	
 }
+
+*/
+
+// На jquery
+
+$("#idButton").onclick = () => {
+	let ageId = $('#idAge').value;
+	let firstNameid = $('#idfirstName').value;
+	let secondNameid = $('#idsecondName').value;
+	
+      event.preventDefault();
+	
+	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
+	tg.sendData([secondNameid,firstNameid,ageId].join('¿'));
+	
+	};
+}
+
 
 
 
