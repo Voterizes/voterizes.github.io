@@ -6,7 +6,7 @@ tg.MainButton.textColor = "#FFFF00";
 tg.MainButton.color = "#FF4500";
 
 let item = '0';
-
+/*
 function addHidden(event){
     event.classList.add('hidden');
 }
@@ -41,6 +41,8 @@ document.querySelector("#idButton").onclick = () => {
 	};
 }
 
+*/
+
 
 /*
 // На jquery
@@ -60,6 +62,11 @@ document.querySelector("#idButton").onclick = () => {
 }
 
 */
+
+
+	let ageId = $('#idAge').value;
+	let firstNameid = $('#idfirstName').value;
+	let secondNameid = $('#idsecondName').value;
 
 
 // let usercard = document.getElementById("usercard");
