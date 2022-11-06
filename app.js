@@ -45,11 +45,12 @@ document.querySelector("#idButton").onclick = () => {
 
 // На jquery
 
-$("#idButton").onclick = () => {
+// $("#idButton").onclick = () => {
 	let ageId = $('#idAge').value;
 	let firstNameid = $('#idfirstName').value;
 	let secondNameid = $('#idsecondName').value;
-	
+
+/*
       event.preventDefault();
 	
 	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
@@ -58,7 +59,7 @@ $("#idButton").onclick = () => {
 	};
 }
 
-
+*/*
 
 
 // let usercard = document.getElementById("usercard");
