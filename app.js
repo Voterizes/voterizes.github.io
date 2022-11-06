@@ -63,11 +63,12 @@ document.querySelector("#idButton").onclick = () => {
 
 */
 
+/*
 
 	let ageId = $('#idAge').value;
 	let firstNameid = $('#idfirstName').value;
 	let secondNameid = $('#idsecondName').value;
-
+*/
 
 // let usercard = document.getElementById("usercard");
 
