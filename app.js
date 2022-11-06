@@ -1,5 +1,4 @@
-$(document).ready(function() {
-var tg = window.Telegram.WebApp;
+let tg = window.Telegram.WebApp;
 
 tg.expand();
 
@@ -7,6 +6,9 @@ tg.MainButton.textColor = "#FFFF00";
 tg.MainButton.color = "#FF4500";
 
 var item = '0';
+
+$(document).ready(function() {
+
 	
  });
 	
