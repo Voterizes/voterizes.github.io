@@ -1,32 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-    <title>ПРИВЕТОС</title>
-</head>
-<body>
-    <div class="container">
+let tg = window.Telegram.WebApp;
+
+tg.expand();
+
+tg.MainButton.textColor = "#FFFF00";
+tg.MainButton.color = "#FF4500";
+
+let item = '0';
+
+function addHidden(event){
+    event.classList.add('hidden');
+}
+
+
+function addHidden_2(one, two, three){
+    document.getElementById(one).hidden = true;
+	document.getElementById(two).hidden = true;
+	document.getElementById(three).hidden = true;
+}
+
+function removeHidden(event){
+    event.classList.remove('hidden');
+}
+
+function removeHidden_2(one){
+    document.getElementById(one).hidden = false;
+}
+
+document.querySelector("#idButton").onclick = () => {
+	let ageId = document.querySelector('#idAge').value;
+	let firstNameid = document.querySelector('#idfirstName').value;
+	let secondNameid = document.querySelector('#idsecondName').value;
 	
-		<div class ="form_page">
-			<form>
-  			    <p><input class="form_width" type="text" id="idAge" placeholder="Введите ваш возраст"></p>
-				<p><input class="form_width" type="text" id="idfirstName"  placeholder="Введите ваше имя"></p>
-				<p><input class="form_width" type="text" id="idsecondName"  placeholder="Введите вашу фамилию"></p>
-				
-				<p><input class="form_width" type="submit" id="idButton" value="Отправить введённые данные"></p>
-  			</form>
-		</div>
+      event.preventDefault();
+	  //addHidden(idAge);
+	  
+	  //addHidden_2('idfirstName');
+	 
 	
 
-				
-	</div>
 	
-	<div class="usercard" id="usercard"></div>
-		
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<script src="app.js"></script>
-</body>
-</html>
+	if (secondNameid != "" && firstNameid != "" && ageId != "" ) {
+	
+	
+	tg.sendData([secondNameid,firstNameid,ageId].join('¿'));
+	
+	};
+	
+	
+	
+	
+	
+}
+
+
+
+// let usercard = document.getElementById("usercard");
+
+// let p = document.createElement("p");
+
+// p.innerText =`${tg.initDataUnsafe.first_name}
+//	${tg.initDataUnsafe.last_name}`;
+	
+// usercard.appendChild(p);
+
+
